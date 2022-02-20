@@ -1,17 +1,22 @@
+:root{
+    --primary-color:#dbd9d9e1;
+    --second-color:#20b2aa;
+    --third-color:#fff;
+
+}
 body{
     padding: 0;
     margin: 0;
     // background: #0C1D26;
-    background: rgba(219, 217, 217, 0.884);
+    background: var(--primary-color);
     font-family: 'Poppins';
     width: 100%;
-    color: var(--primary-color);
     display: grid;
 
 }
 header{
     background-image: url('../images/image-hero-desktop.jpg');
-    height: 300px;
+    height: 350px;
 
     nav{
         display: grid;
@@ -30,14 +35,147 @@ header{
 
             a{
                 text-decoration: none;
-                color: white;
+                color: var(--third-color);
             }
         }
     }
 }
 main{
-    margin: 0 400px;
-    margin-top: -100px;
-    background-color: white;
+    margin: 0 450px;
+    margin-top: -50px;
+    // background-color: white;
+    text-align: center;
+    font-size: 11px;
+    display: grid;
+    gap: 10px;
     // box-shadow: 5px 10px 8px 10px #888888;
+
+    img{
+        height: 35px;
+        width: 35px;
+    }
+
+    .first-section{
+        background-color: var(--third-color);
+        .logo-mastercraft{
+            margin-top: -30px;
+
+        }
+
+        .back-bookmark{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 20px;
+
+            .left{
+                p{
+                padding: 5px 10px;
+                border-radius: 50px;
+                background-color:var(--second-color);
+                color: var(--third-color);
+                }
+            }
+            .right{
+                display: flex;
+                p{
+                    border: 1px var(--third-color);
+                    padding: 5px 10px;
+                    border-radius: 50px;
+                    background-color:var(--primary-color);
+                    }
+            }
+        }
+    }
+
+    .second-section{
+
+        background-color: var(--third-color);
+        display: grid;
+
+        .upper-content{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 20px;
+
+            .vl{
+                border: 1px solid var(--primary-color);
+                height: 50%;
+                margin-top: 20px;
+            }
+            #last-item{
+                margin-right: 100px;
+            }
+            
+        }
+        .lower-content{
+            background-color: var(--primary-color);
+            margin: 0 20px;
+            margin-bottom: 20px;
+            height: 5px;
+            position: relative;
+            // border-radius: 50px;
+            hr{
+                height: 5px;
+                background-color: var(--second-color);
+                border-radius: 70px;
+                // padding: 0 5px;
+                margin-right: 130px;
+               position: absolute;
+               width: 70%;
+               bottom: -7px;
+
+                
+            }
+        }
+
+    }
+
+    .third-section{
+        background: var(--third-color);
+
+        .third-section-cta{
+            margin: 0 20px;
+            text-align: left;
+
+            .container{
+                border: 1px var(--primary-color) solid;
+                margin-bottom: 10px;
+
+                .content{
+                    margin: 10px 20px;
+
+                    .upper-content{
+                        display: flex;
+                        justify-content: space-between;
+
+                        .right-content{
+                            color: var(--second-color);
+                        }
+                    }
+
+                    .lower-content{
+                        display: flex;
+                        justify-content: space-between;
+
+                        .left-content{
+                            span{
+                                font-weight: lighter;
+                                font-size: 9px;
+                            }
+                        }
+
+                        .right-content{
+                           p{
+                            background: var(--second-color);
+                            border-radius: 50px;
+                            padding: 5px 10px;
+                            color: var(--third-color);
+                           }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
