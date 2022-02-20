@@ -1,0 +1,198 @@
+:root {
+  --primary-color:#dbd9d9e1;
+  --second-color:#20b2aa;
+  --third-color:#fff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--primary-color);
+  font-family: 'Poppins';
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+header {
+  background-image: url("../images/image-hero-desktop.jpg");
+  height: 350px;
+}
+
+header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+}
+
+header nav img {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin-right: 45px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+main {
+  margin: 0 450px;
+  margin-top: -50px;
+  text-align: center;
+  font-size: 11px;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
+
+main img {
+  height: 35px;
+  width: 35px;
+}
+
+main .first-section {
+  background-color: var(--third-color);
+}
+
+main .first-section .logo-mastercraft {
+  margin-top: -30px;
+}
+
+main .first-section .back-bookmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px;
+}
+
+main .first-section .back-bookmark .left p {
+  padding: 5px 10px;
+  border-radius: 50px;
+  background-color: var(--second-color);
+  color: var(--third-color);
+}
+
+main .first-section .back-bookmark .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .first-section .back-bookmark .right p {
+  border: 1px var(--third-color);
+  padding: 5px 10px;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+}
+
+main .second-section {
+  background-color: var(--third-color);
+  display: -ms-grid;
+  display: grid;
+}
+
+main .second-section .upper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px;
+}
+
+main .second-section .upper-content .vl {
+  border: 1px solid var(--primary-color);
+  height: 50%;
+  margin-top: 20px;
+}
+
+main .second-section .upper-content #last-item {
+  margin-right: 100px;
+}
+
+main .second-section .lower-content {
+  background-color: var(--primary-color);
+  margin: 0 20px;
+  margin-bottom: 20px;
+  height: 5px;
+  position: relative;
+}
+
+main .second-section .lower-content hr {
+  height: 5px;
+  background-color: var(--second-color);
+  border-radius: 70px;
+  margin-right: 130px;
+  position: absolute;
+  width: 70%;
+  bottom: -7px;
+}
+
+main .third-section {
+  background: var(--third-color);
+}
+
+main .third-section .third-section-cta {
+  margin: 0 20px;
+  text-align: left;
+}
+
+main .third-section .third-section-cta .container {
+  border: 1px var(--primary-color) solid;
+  margin-bottom: 10px;
+}
+
+main .third-section .third-section-cta .container .content {
+  margin: 10px 20px;
+}
+
+main .third-section .third-section-cta .container .content .upper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .third-section .third-section-cta .container .content .upper-content .right-content {
+  color: var(--second-color);
+}
+
+main .third-section .third-section-cta .container .content .lower-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .third-section .third-section-cta .container .content .lower-content .left-content span {
+  font-weight: lighter;
+  font-size: 9px;
+}
+
+main .third-section .third-section-cta .container .content .lower-content .right-content p {
+  background: var(--second-color);
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: var(--third-color);
+}
+/*# sourceMappingURL=main.css.map */
