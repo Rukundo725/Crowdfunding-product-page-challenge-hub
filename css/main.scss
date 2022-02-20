@@ -45,7 +45,7 @@ header{
     }
 }
 main{
-    margin: 0 400px;
+    margin: 0 350px;
     margin-top: -50px;
     // background-color: white;
     text-align: center;
@@ -77,6 +77,7 @@ main{
                 border-radius: 50px;
                 background-color:var(--second-color);
                 color: var(--third-color);
+                cursor: pointer;
                 }
             }
             .right{
@@ -86,6 +87,7 @@ main{
                     padding: 5px 10px;
                     border-radius: 50px;
                     background-color:var(--primary-color);
+                    cursor: pointer;
                     }
             }
         }
@@ -174,6 +176,7 @@ main{
                             border-radius: 50px;
                             padding: 5px 10px;
                             color: var(--third-color);
+                            cursor: pointer;
                            }
                         }
                     }
@@ -182,4 +185,101 @@ main{
         }
 
     }
+
+    // <!-- Selection modal start -->
+    .selection-modal{
+        background: var(--third-color);
+        display: grid;
+        text-align: left;
+        
+
+        img{
+            justify-self: end;
+            height: 15px;
+            width: 15px;
+            margin:10px;
+        }
+
+        .selection-modal-cta{
+            margin: 0 20px;
+            
+            .Pledge-with-no-reward{
+                border: 1px solid var(--primary-color);
+                margin-bottom: 10px;
+                .pledge-with-no-reward-cta{
+
+                    margin: 10px 20px;
+                    p{
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+                
+
+            .Pledge-with-reward{
+                border: 1px solid var(--primary-color);
+                margin-bottom: 10px;
+
+                .content{
+                    margin: 0 20px;
+                    .upper-content{
+                        display: flex;
+                        justify-content: space-between;
+                      
+
+                        span{
+                            color: var(--second-color);
+                            margin-left: 10px;
+                        }
+
+                        input{
+                            margin-top: 20px;
+                        }
+                        h3{
+                            span{
+                                color: black;
+                                font-weight: lighter;
+                                font-size: 12px;
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+
+                    .lower-selected-pledge{
+                        hr{
+
+                            margin: 0 -20px
+                        }
+                        .container{
+                            display: flex;
+                            justify-content: space-between;
+
+                            .right{
+                                display: flex;
+
+                                #dollar{
+                                    border: 1px var(--primary-color) solid;
+                                    border-radius: 50px;
+                                    padding: 5px 10px;
+                                    margin-right: 10px;
+                                }
+
+                                #continue{
+                                    background: var(--second-color);
+                                    border-radius: 50px;
+                                    padding: 5px 10px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+                
+
+            }
+        }
+    }
+
 }

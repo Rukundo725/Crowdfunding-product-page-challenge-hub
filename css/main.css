@@ -50,7 +50,7 @@ header nav ul a {
 }
 
 main {
-  margin: 0 400px;
+  margin: 0 350px;
   margin-top: -50px;
   text-align: center;
   display: -ms-grid;
@@ -86,6 +86,7 @@ main .first-section .back-bookmark .left p {
   border-radius: 50px;
   background-color: var(--second-color);
   color: var(--third-color);
+  cursor: pointer;
 }
 
 main .first-section .back-bookmark .right {
@@ -99,6 +100,7 @@ main .first-section .back-bookmark .right p {
   padding: 5px 10px;
   border-radius: 50px;
   background-color: var(--primary-color);
+  cursor: pointer;
 }
 
 main .second-section {
@@ -195,5 +197,105 @@ main .third-section .third-section-cta .container .content .lower-content .right
   border-radius: 50px;
   padding: 5px 10px;
   color: var(--third-color);
+  cursor: pointer;
+}
+
+main .selection-modal {
+  background: var(--third-color);
+  display: -ms-grid;
+  display: grid;
+  text-align: left;
+}
+
+main .selection-modal img {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  height: 15px;
+  width: 15px;
+  margin: 10px;
+}
+
+main .selection-modal .selection-modal-cta {
+  margin: 0 20px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-no-reward {
+  border: 1px solid var(--primary-color);
+  margin-bottom: 10px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-no-reward .pledge-with-no-reward-cta {
+  margin: 10px 20px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-no-reward .pledge-with-no-reward-cta p {
+  margin-left: 20px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward {
+  border: 1px solid var(--primary-color);
+  margin-bottom: 10px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward .content {
+  margin: 0 20px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward .content .upper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward .content .upper-content span {
+  color: var(--second-color);
+  margin-left: 10px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward .content .upper-content input {
+  margin-top: 20px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward .content .upper-content h3 span {
+  color: black;
+  font-weight: lighter;
+  font-size: 12px;
+  margin-left: 0px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward .content .lower-selected-pledge hr {
+  margin: 0 -20px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward .content .lower-selected-pledge .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward .content .lower-selected-pledge .container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward .content .lower-selected-pledge .container .right #dollar {
+  border: 1px var(--primary-color) solid;
+  border-radius: 50px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+main .selection-modal .selection-modal-cta .Pledge-with-reward .content .lower-selected-pledge .container .right #continue {
+  background: var(--second-color);
+  border-radius: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
