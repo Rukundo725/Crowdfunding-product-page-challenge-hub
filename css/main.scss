@@ -309,3 +309,26 @@ main{
     }
 
 }
+footer{
+    text-align: center;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        
+        .social-media{
+            display: flex;
+            .iconify{
+                color: black;
+                height: 35px;
+                width: 35px;
+                margin-right: 20px;
+                margin-top: 10px;
+
+                &:hover{
+                    color: var(--second-color);
+                }
+            }
+        }
+    }
+}

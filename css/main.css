@@ -326,4 +326,36 @@ main .success-modal #got-it {
   cursor: pointer;
   margin-bottom: 20px;
 }
+
+footer {
+  text-align: center;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px;
+}
+
+footer .container .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .social-media .iconify {
+  color: black;
+  height: 35px;
+  width: 35px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+footer .container .social-media .iconify:hover {
+  color: var(--second-color);
+}
 /*# sourceMappingURL=main.css.map */
