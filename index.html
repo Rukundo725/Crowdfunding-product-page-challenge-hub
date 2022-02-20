@@ -4,16 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/main.css">
-  
+  <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <script src="js/script.js" type="module"></script>
   <title>Frontend Mentor | Crowdfunding product page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -202,155 +198,227 @@
 
     <!-- Selection modal start -->
     <div class="selection-modal">
+
       <img src="images/icon-close-modal.svg" alt="Close-Modal">
-      <h2> Back this project</h2>
-      <p> Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
-      <div class="Pledge-with-no-reward">
-        <label class="container">
-          <input type="checkbox">Pledge with no reward
-          <span class="checkmark"></span>
-        </label>
-        <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
-            you will be signed up to receive product updates via email.
-        </p>
-      </div>
+      <div class="selection-modal-cta">
+        <h3> Back this project</h3>
+        <p> Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
-      <div class="Pledge-with-reward">
+        <div class="Pledge-with-no-reward">
 
-        <div class="upper-content">
+          <div class="pledge-with-no-reward-cta">
 
-          <label class="container">
-            <input type="checkbox" checked="checked">  Bamboo Stand
-            <span class="checkmark">Pledge $25 or more</span>
-          </label>
-          <h3> 101 <span>left</span></h3>
+            <label class="container">
+              <input type="checkbox">Pledge with no reward
+              <span class="checkmark"></span>
+            </label>
 
-        </div>
-
-        <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-          you’ll be added to a special Backer member list.
-        </p>
-
-        <hr>
-        <!-- Selected pledge start -->
-          
-
-        <div class="lower-selected-pledge">
-            
-          <div class="left">
-            <p>
-              Enter your pledge
-            </p>
-          </div>
-
-          <div class="right">
-
-            <p>
-              $25 <span> Continue</span>
+            <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
+                you will be signed up to receive product updates via email.
             </p>
 
           </div>
 
         </div>
 
-      </div>
+        <!-- Pledge $25 or more -->
+        <div class="Pledge-with-reward Pledge-$25">
 
-      <div class="Pledge-with-reward">
+          <div class="content">
 
-        <div class="upper-content">
+            <div class="upper-content">
 
-          <label class="container">
-            <input type="checkbox" checked="checked"> Black Edition Stand
-            <span class="checkmark">Pledge $75 or more</span>
-          </label>
-          <h3> 64 <span>left</span></h3>
-
-        </div>
-
-        <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-            member list. Shipping is included.
-        </p>
-
-        <hr>
-        <!-- Selected pledge start -->
-          
-
-        <div class="lower-selected-pledge">
-            
-          <div class="left">
-            <p>
-              Enter your pledge
+              <label class="container">
+                <input type="checkbox" checked="checked">  Bamboo Stand
+                <span class="checkmark">Pledge $25 or more</span>
+              </label>
+              <h3> 101 <span>left</span></h3>
+  
+            </div>
+  
+            <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+              you’ll be added to a special Backer member list.
             </p>
-          </div>
-
-          <div class="right">
-
-            <p>
-              $75<span> Continue</span>
-            </p>
-
-          </div>
+  
             
-        </div>
+            <!-- Selected pledge start -->
+   
+            <div class="lower-selected-pledge">
 
-      </div>
+              <hr>
+                
+              <div class="container">
 
-      <div class="Pledge-with-reward">
+                <div class="left">
+  
+                  <p>
+                    Enter your pledge
+                  </p>
+    
+                </div>
+    
+                <div class="right">
+    
+                  <p  id="dollar">$25 </p>
+                  <p id="continue">Continue</p>
+    
+                </div>
 
-        <div class="upper-content">
-
-          <label class="container">
-            <input type="checkbox" checked="checked">   Mahogany Special Edition
-            <span class="checkmark"> Pledge $200 or more</span>
-          </label>
-          <h3> 0 <span>left</span></h3>
-
-        </div>
-
-        <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-          to our Backer member list. Shipping is included.
-        </p>
-
-        <hr>
-        <!-- Selected pledge start -->
-          
-
-        <div class="lower-selected-pledge">
-            
-            <div class="left">
-              <p>
-                Enter your pledge
-              </p>
+              </div>
+  
             </div>
 
-            <div class="right">
+          </div>
 
-              <p>
-                $200 <span> Continue</span>
-              </p>
+        </div>
 
+        <!-- Pledge $75 or more -->
+        <div class="Pledge-with-reward Pledge-$75">
+          
+          <div class="content">
+
+            <div class="upper-content">
+
+              <label class="container">
+                <input type="checkbox" checked="checked">  Black Edition Stand
+                <span class="checkmark">Pledge $75 or more</span>
+              </label>
+              <h3> 64 <span>left</span></h3>
+  
             </div>
+  
+            <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+              member list. Shipping is included.
+            </p>
+  
             
+            <!-- Selected pledge start -->
+   
+            <div class="lower-selected-pledge">
+
+              <hr>
+                
+              <div class="container">
+
+                <div class="left">
+  
+                  <p>
+                    Enter your pledge
+                  </p>
+    
+                </div>
+    
+                <div class="right">
+    
+                  <p  id="dollar">$75 </p>
+                  <p id="continue">Continue</p>
+    
+                </div>
+
+              </div>
+  
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Pledge $200 or more -->
+        <div class="Pledge-with-reward Pledge-$200">
+          
+          <div class="content">
+
+            <div class="upper-content">
+
+              <label class="container">
+                <input type="checkbox" checked="checked"> Mahogany Special Edition
+                <span class="checkmark"> Pledge $200 or more</span>
+              </label>
+              <h3> 0 <span>left</span></h3>
+  
+            </div>
+  
+            <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+              to our Backer member list. Shipping is included.
+            </p>
+  
+            
+            <!-- Selected pledge start -->
+   
+            <div class="lower-selected-pledge">
+
+              <hr>
+                
+              <div class="container">
+
+                <div class="left">
+  
+                  <p>
+                    Enter your pledge
+                  </p>
+    
+                </div>
+    
+                <div class="right">
+    
+                  <p  id="dollar">$200 </p>
+                  <p id="continue">Continue</p>
+    
+                </div>
+
+              </div>
+  
+            </div>
+
           </div>
 
         </div>
 
       </div>
-      <!-- Success modal end -->
-      <div class="success-modal">
-        <img src="images/icon-check.svg" alt="check icon">
-        <h2>Thanks for your support!</h2>
-        <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-          an email once our campaign is completed.
-        </p>
 
-        <p> Got it! </p>
+    </div>
 
-      </div>
-      
+    <!-- Success modal end -->
+    <div class="success-modal">
+
+      <img src="images/icon-check.svg" alt="check icon">
+      <h2>Thanks for your support!</h2>
+      <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+        an email once our campaign is completed.
+      </p>
+
+      <p id="got-it"> Got it! </p>
+
     </div>
 
   </main>
 </body>
+
+<footer>
+
+  <hr>
+  
+  <div class="container">
+
+    <h3><span class="material-icons">copyright</span>2022 #Owner</h3>
+
+    <div class="social-media">
+      
+      <a href="mailto:gerukundo14@gmail.com" target="_blank"><span class="iconify" data-icon="clarity:email-outline-badged"></span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/rukundo-germain-9111bb166" target="_blank"><span class="iconify" data-icon="et:linkedin" ></span>
+      </a>
+
+      <a href="https://github.com/Rukundo725" target="_blank"><span class="iconify" data-icon="akar-icons:github-outline-fill" ></span>
+      </a>
+
+      <a href="https://twitter.com/OWNER_G_" target="_blank"> <span class="iconify" data-icon="et:twitter" ></span>
+      </a>
+
+    </div>
+  </div>
+  
+</footer>
 </html>

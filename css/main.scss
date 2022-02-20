@@ -1,15 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
 :root{
-    --primary-color:#dbd9d9e1;
-    --second-color:#20b2aa;
+    --primary-color:hsla(0, 0%, 48%, 0.1);
+    --second-color: hsl(176, 50%, 47%);
     --third-color:#fff;
 
 }
 body{
     padding: 0;
     margin: 0;
-    // background: #0C1D26;
     background: var(--primary-color);
-    font-family: 'Poppins';
+    font-family: 'Commissioner', sans-serif;
+    Font-size: 16px;
     width: 100%;
     display: grid;
 
@@ -31,7 +34,7 @@ header{
             display: flex;
             justify-content: space-between;
             list-style: none;
-            margin-right: 45px;
+            margin-right: 30px;
 
             a{
                 text-decoration: none;
@@ -41,14 +44,12 @@ header{
     }
 }
 main{
-    margin: 0 450px;
+    margin: 0 350px;
     margin-top: -50px;
-    // background-color: white;
     text-align: center;
-    font-size: 11px;
     display: grid;
     gap: 10px;
-    // box-shadow: 5px 10px 8px 10px #888888;
+    position: relative;
 
     img{
         height: 35px;
@@ -73,6 +74,7 @@ main{
                 border-radius: 50px;
                 background-color:var(--second-color);
                 color: var(--third-color);
+                cursor: pointer;
                 }
             }
             .right{
@@ -82,6 +84,7 @@ main{
                     padding: 5px 10px;
                     border-radius: 50px;
                     background-color:var(--primary-color);
+                    cursor: pointer;
                     }
             }
         }
@@ -113,16 +116,14 @@ main{
             margin-bottom: 20px;
             height: 5px;
             position: relative;
-            // border-radius: 50px;
             hr{
                 height: 5px;
                 background-color: var(--second-color);
                 border-radius: 70px;
-                // padding: 0 5px;
                 margin-right: 130px;
                position: absolute;
                width: 70%;
-               bottom: -7px;
+               bottom: -10px;
 
                 
             }
@@ -160,7 +161,7 @@ main{
                         .left-content{
                             span{
                                 font-weight: lighter;
-                                font-size: 9px;
+                                font-size: 12px;
                             }
                         }
 
@@ -170,6 +171,7 @@ main{
                             border-radius: 50px;
                             padding: 5px 10px;
                             color: var(--third-color);
+                            cursor: pointer;
                            }
                         }
                     }
@@ -177,5 +179,156 @@ main{
             }
         }
 
+    }
+
+    // <!-- Selection modal start -->
+    .selection-modal{
+        background: var(--third-color);
+        display: grid;
+        text-align: left;
+        position: absolute;
+        top: -120px;
+        display: none;
+
+        
+
+        img{
+            justify-self: end;
+            height: 15px;
+            width: 15px;
+            margin:10px;
+            cursor: pointer;
+        }
+
+        .selection-modal-cta{
+            margin: 0 20px;
+            
+            .Pledge-with-no-reward{
+                border: 1px solid var(--primary-color);
+                margin-bottom: 10px;
+                .pledge-with-no-reward-cta{
+
+                    margin: 10px 20px;
+                    p{
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+                
+
+            .Pledge-with-reward{
+                border: 1px solid var(--primary-color);
+                margin-bottom: 10px;
+
+                .content{
+                    margin: 0 20px;
+                    .upper-content{
+                        display: flex;
+                        justify-content: space-between;
+                      
+
+                        span{
+                            color: var(--second-color);
+                            margin-left: 10px;
+                        }
+
+                        input{
+                            margin-top: 20px;
+                        }
+                        h3{
+                            span{
+                                color: black;
+                                font-weight: lighter;
+                                font-size: 12px;
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+
+                    .lower-selected-pledge{
+                        hr{
+
+                            margin: 0 -20px
+                        }
+                        .container{
+                            display: flex;
+                            justify-content: space-between;
+
+                            .right{
+                                display: flex;
+
+                                #dollar{
+                                    border: 1px var(--primary-color) solid;
+                                    border-radius: 50px;
+                                    padding: 5px 10px;
+                                    margin-right: 10px;
+                                }
+
+                                #continue{
+                                    background: var(--second-color);
+                                    border-radius: 50px;
+                                    padding: 5px 10px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+                
+
+            }
+        }
+    }
+
+    // <!-- Success modal end -->
+
+    .success-modal{
+        display: none;
+        text-align: center;
+        margin: 0 80px;
+        margin-bottom: 20px;
+        background: var(--third-color);
+        position: absolute;
+        top: 90px;
+
+        img{
+            margin-top: 20px;
+        }
+
+        #got-it{
+            padding: 5px 10px;
+            border-radius: 50px;
+            background: var(--second-color);
+            margin: 0 200px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+    }
+
+}
+footer{
+    text-align: center;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        
+        .social-media{
+            display: flex;
+            .iconify{
+                color: black;
+                height: 35px;
+                width: 35px;
+                margin-right: 20px;
+                margin-top: 10px;
+
+                &:hover{
+                    color: var(--second-color);
+                }
+            }
+        }
     }
 }
